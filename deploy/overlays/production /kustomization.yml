@@ -12,7 +12,7 @@ configMapGenerator:
   - behavior: merge
     envs:
       - application.env
-    name: carbonite-env
+    name: simpleapi-env
 
 images:
   - name: ghcr.io/florianbgt/simpleapi

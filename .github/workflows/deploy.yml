@@ -28,5 +28,5 @@ jobs:
           with:
             context: .
             push: true
-            tags: ghcr.io/${{ github.repository }}/simpleApi:${{ github.sha }}
+            tags: ghcr.io/${{ github.repository }}/simpleapi:${{ github.sha }}
               

@@ -2,7 +2,7 @@ commonLabels:
   provider: kustomize
   app: simpleapi
 
-namespace: argocd
+namespace: apps-ns
 
 images:
   - name: ghcr.io/florianbgt/simpleapi

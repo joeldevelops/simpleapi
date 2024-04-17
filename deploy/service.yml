@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service
+  name: simpleapi-service
   labels:
     app: simpleapi
 spec:

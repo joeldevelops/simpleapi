@@ -1,0 +1,11 @@
+commonLabels:
+  provider: kustomize
+  app: simpleapi
+
+images:
+  - name: ghcr.io/florianbgt/simpleapi
+    newTag: 24c195ea21ae8feb7995c2cc81a3ce66760356e9
+
+resources:
+  - deployment.yml
+  - service.yml

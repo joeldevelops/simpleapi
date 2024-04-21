@@ -17,3 +17,23 @@ spec:
           ports:
             - name: http
               containerPort: 3000
+          # resources:
+          #   limits:
+          #     memory: 384Mi # 2 workers + 1 * UWSGI_RELOAD_ON_RSS=128
+          #     cpu: 100m
+          #   requests:
+          #     memory: 256Mi # 2 workers * UWSGI_RELOAD_ON_RSS=128
+          #     cpu: 50m
+          # livenessProbe:
+          #   httpGet:
+          #     path: /liveness
+          #     port: api
+          # startupProbe:
+          #   httpGet:
+          #     path: /readiness
+          #     port: api
+          #   failureThreshold: 6
+          #   periodSeconds: 10
+          envFrom:
+            - configMapRef:
+                name: env

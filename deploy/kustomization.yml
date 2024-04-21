@@ -4,6 +4,11 @@ commonLabels:
 
 namespace: apps-ns
 
+configMapGenerator:
+  - name: env
+    envs:
+      - application.env
+
 images:
   - name: ghcr.io/florianbgt/simpleapi
     newTag: 6bab287232ca17b07237e8ee0a46976453354eda

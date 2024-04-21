@@ -2,9 +2,10 @@ const express = require('express')
 const app = express()
 
 const port = process.env.PORT || 3000
+const text = process.env.TEXT || 'Hello World!'
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send(text)
 })
 
 app.get('/liveness', (req, res) => {

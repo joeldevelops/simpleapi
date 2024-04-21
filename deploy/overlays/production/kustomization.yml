@@ -6,7 +6,7 @@ configMapGenerator:
 
 images:
   - name: ghcr.io/florianbgt/simpleapi
-    newTag: 6bab287232ca17b07237e8ee0a46976453354eda
+    newTag: a1fa5ed1ed6e3b28ed02b35c80754f5a46a8d4e1
 
 resources:
   - ../../base

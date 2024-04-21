@@ -1,0 +1,15 @@
+configMapGenerator:
+  - behavior: merge
+    envs:
+      - application.env
+    name: env
+
+images:
+  - name: ghcr.io/florianbgt/simpleapi
+    newTag: 6bab287232ca17b07237e8ee0a46976453354eda
+
+resources:
+  - ../../base
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization

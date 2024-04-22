@@ -17,6 +17,16 @@ spec:
           ports:
             - name: http
               containerPort: 5000
+          livenessProbe:
+            httpGet:
+              path: /liveness
+              port: http
+          startupProbe:
+            httpGet:
+              path: /readiness
+              port: http
+            failureThreshold: 6
+            periodSeconds: 10
           envFrom:
             - configMapRef:
                 name: env

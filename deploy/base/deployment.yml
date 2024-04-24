@@ -39,5 +39,5 @@ spec:
             - name: DB_REPLICA_URL
               valueFrom:
                 secretKeyRef:
-                  name: db-url-secret
+                  name: default/db-url-secret
                   key: dbReplicaUrl

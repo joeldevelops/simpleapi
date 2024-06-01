@@ -12,4 +12,4 @@ jobs:
           apiKey: ${{ secrets.NANO_API_KEY }}
           envName: 'test'
           token: ${{ secrets.GITHUB_TOKEN }}
-          planId: 1
+          planId: 2
